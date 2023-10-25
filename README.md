@@ -1,47 +1,66 @@
 # ChatGPT for Google
 
-A browser extension to display ChatGPT response alongside Google Search results, supports Chrome/Edge/Firefox
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/wong2/chatgpt-google-extension/pre-release-build.yml)
+[![Twitter Follow](https://img.shields.io/twitter/follow/chatgpt4google?style=social)](https://twitter.com/chatgpt4google)
+![License](https://img.shields.io/github/license/wong2/chatgpt-google-extension)
 
-[<img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=369975&theme=light" />](https://www.producthunt.com/posts/chatgpt-for-google?utm_source=badge-featured)
+### Notice (2023-02-20)
 
-![Screenshot](screenshot.png?raw=true)
+As this extension has been acquired, this code repository will no longer be updated from now on.
 
-## Installation
+# My new project: [ChatHub: All-in-one chatbot client](https://github.com/chathub-dev/chathub)
 
-### Install to Chrome/Edge
+---
 
-#### Install from Chrome Web Store (Preferred)
+A browser extension to display ChatGPT response alongside Google (and other search engines) results
 
-<https://chrome.google.com/webstore/detail/chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf>
+[Install from Chrome Web Store](https://chatgpt4google.com/chrome?utm_source=github)
 
-#### Local Install
+[Install from Mozilla Add-on Store](https://chatgpt4google.com/firefox?utm_source=github)
 
-1. Download `chromium.zip` from [Releases](https://github.com/wong2/chat-gpt-google-extension/releases).
-2. Unzip the file.
-3. In Chrome/Edge go to the extensions page (`chrome://extensions` or `edge://extensions`).
-4. Enable Developer Mode.
-5. Drag the unzipped folder anywhere on the page to import it (do not delete the folder afterwards).
+## Supported Search Engines
 
-### Install to Firefox
+Google, Baidu, Bing, DuckDuckGo, Brave, Yahoo, Naver, Yandex, Kagi, Searx
 
-#### Install from Mozilla Add-on Store (Preferred)
+## Screenshot
 
-<https://addons.mozilla.org/addon/chatgpt-for-google/>
+![Screenshot](screenshots/extension.png?raw=true)
 
-#### Local Install
+## Features
 
-1. Download `firefox.zip` from [Releases](https://github.com/wong2/chat-gpt-google-extension/releases).
-2. Unzip the file.
-3. Go to `about:debugging`, click "This Firefox" on the sidebar.
-4. Click "Load Temporary Add-on" button, then select any file in the unzipped folder.
+- Supports all popular search engines
+- Supports the official OpenAI API
+- Supports ChatGPT Plus
+- Markdown rendering
+- Code highlights
+- Dark mode
+- Provide feedback to improve ChatGPT
+- Copy to clipboard
+- Custom trigger mode
+- Switch languages
+
+## Troubleshooting
+
+### How to make it work in Brave
+
+![Screenshot](screenshots/brave.png?raw=true)
+
+Disable "Prevent sites from fingerprinting me based on my language preferences" in `brave://settings/shields`
+
+### How to make it work in Opera
+
+![Screenshot](screenshots/opera.png?raw=true)
+
+Enable "Allow access to search page results" in the extension management page
 
 ## Build from source
 
 1. Clone the repo
 2. Install dependencies with `npm`
-3. Run `./build.sh` for Chrome, `./build.sh firefox` for Firefox
-4. Load the `build` directory to your browser
+3. `npm run build`
+4. Load `build/chromium/` or `build/firefox/` directory to your browser
 
-## Credit
+## Star History
 
-This project is inspired by [ZohaibAhmed/ChatGPT-Google](https://github.com/ZohaibAhmed/ChatGPT-Google)
+[![Star History Chart](https://api.star-history.com/svg?repos=wong2/chatgpt-google-extension&type=Date)](https://star-history.com/#wong2/chatgpt-google-extension&Date)
+
